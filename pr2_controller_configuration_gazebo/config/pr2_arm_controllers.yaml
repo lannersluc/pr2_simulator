@@ -26,7 +26,8 @@ r_arm_controller:
       - r_wrist_flex_joint
       - r_wrist_roll_joint
     constraints:
-      goal_time: 0.6
+      goal_time: 10.0
+      stopped_velocity_tolerance: 0.15
       r_shoulder_pan_joint:
         goal: 0.02
       r_shoulder_lift_joint:
@@ -74,7 +75,8 @@ l_arm_controller:
       - l_wrist_flex_joint
       - l_wrist_roll_joint
     constraints:
-      goal_time: 0.6
+      goal_time: 10.0
+      stopped_velocity_tolerance: 0.15
       l_shoulder_pan_joint:
         goal: 0.02
       l_shoulder_lift_joint:
