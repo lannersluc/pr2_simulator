@@ -11,3 +11,12 @@ torso_controller:
   position_joint_action_node:
     joint: torso_lift_joint
     goal_threshold: 0.01
+    
+  joint_trajectory_action_node:
+    joints:
+      - torso_lift_joint
+    constraints:
+      goal_time: 10.0
+      stopped_velocity_tolerance: 0.15
+      torso_lift_joint:
+        goal: 0.02
